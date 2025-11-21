@@ -420,7 +420,7 @@ class AuthenticationSystem:
 class MedicineDatabase:
     def __init__(self):
         # استخدام نفس مسار قاعدة البيانات القديم من الكود 1
-        self.db_path = "medicines.db"
+        self.db_path = "./medicines.db"
         # إنشاء المجلد إذا لم يكن موجوداً
         os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
         self.init_database()
